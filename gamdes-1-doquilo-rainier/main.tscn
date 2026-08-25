@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://hcilkpm52bi8"]
+
+[node name="Main" type="Node2D" unique_id=1131525119]
+
+[node name="Player" type="Sprite2D" parent="." unique_id=999697610]
+
+[node name="Camera" type="Camera2D" parent="Player" unique_id=391727120]
+
+[node name="ScoreLabel" type="Label" parent="." unique_id=577198161]
+offset_right = 40.0
+offset_bottom = 23.0
