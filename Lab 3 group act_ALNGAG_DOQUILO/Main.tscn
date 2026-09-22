@@ -1,0 +1,73 @@
+[gd_scene format=3 uid="uid://44vm5nor1v8o"]
+
+[ext_resource type="Script" uid="uid://busve7ansf7da" path="res://Main.gd" id="1"]
+[ext_resource type="Script" uid="uid://dehvt5k8nq65f" path="res://Base.gd" id="2"]
+
+[node name="Main" type="Node2D" unique_id=1338894468]
+script = ExtResource("1")
+
+[node name="Base" type="Node2D" parent="." unique_id=1003152795]
+position = Vector2(850, 325)
+script = ExtResource("2")
+
+[node name="Soldiers" type="Node2D" parent="." unique_id=1136883543]
+
+[node name="Zombies" type="Node2D" parent="." unique_id=301857096]
+
+[node name="SpawnTimer" type="Timer" parent="." unique_id=605202814]
+wait_time = 0.5
+autostart = true
+
+[node name="SoldierTimer" type="Timer" parent="." unique_id=824691940]
+wait_time = 5.0
+autostart = true
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=1538056935]
+
+[node name="ScoreLabel" type="Label" parent="UI" unique_id=1854722013]
+offset_left = 20.0
+offset_top = 15.0
+offset_right = 300.0
+offset_bottom = 45.0
+theme_override_font_sizes/font_size = 24
+
+[node name="MoneyLabel" type="Label" parent="UI" unique_id=432757428]
+offset_left = 20.0
+offset_top = 50.0
+offset_right = 300.0
+offset_bottom = 80.0
+theme_override_font_sizes/font_size = 24
+
+[node name="BaseHealthLabel" type="Label" parent="UI" unique_id=103459045]
+offset_left = 700.0
+offset_top = 15.0
+offset_right = 980.0
+offset_bottom = 45.0
+theme_override_font_sizes/font_size = 24
+
+[node name="MessageLabel" type="Label" parent="UI" unique_id=1679874424]
+offset_left = 330.0
+offset_top = 15.0
+offset_right = 670.0
+offset_bottom = 50.0
+theme_override_font_sizes/font_size = 24
+horizontal_alignment = 1
+
+[node name="HelpLabel" type="Label" parent="UI" unique_id=894349125]
+offset_left = 20.0
+offset_top = 590.0
+offset_right = 980.0
+offset_bottom = 630.0
+theme_override_font_sizes/font_size = 18
+text = "Drag soldiers with the mouse  •  Protect the base  •  Kill zombies for money"
+horizontal_alignment = 1
+
+[node name="GameOverLabel" type="Label" parent="UI" unique_id=1128487614]
+visible = false
+offset_left = 250.0
+offset_top = 260.0
+offset_right = 750.0
+offset_bottom = 390.0
+theme_override_font_sizes/font_size = 42
+horizontal_alignment = 1
+vertical_alignment = 1
